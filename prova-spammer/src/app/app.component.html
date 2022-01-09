@@ -1,0 +1,17 @@
+<div class = "container">
+<form class = "jumbotron">
+  <div class = "form-group">
+    <label  for = "useless">Cose inutile</label>
+    <input name = "useless" #useless class = "form-control">
+    <br>
+    <label  for = "spam">Spam</label>
+    <input name = "spam" #spam class = "form-control">
+  </div>
+  <button (click) = "addSpam(useless,spam)" class = "btn-primary">Submit spamm</button>
+</form>
+<ul>
+  <li *ngFor = "let a of articles">
+     {{a}}
+  </li>
+</ul>
+</div>
